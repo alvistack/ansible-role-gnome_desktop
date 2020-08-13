@@ -1,4 +1,4 @@
-# Ansible Role for Gnome
+# Ansible Role for GNOME Desktop
 
 ## 4.5.0 - TBC
 

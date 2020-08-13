@@ -1,11 +1,11 @@
-# Ansible Role for Gnome
+# Ansible Role for GNOME Desktop
 
-[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-gnome.svg)](https://travis-ci.com/alvistack/ansible-role-gnome)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-gnome.svg)](https://github.com/alvistack/ansible-role-gnome)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-gnome.svg)](https://github.com/alvistack/ansible-role-gnome/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.gnome-blue.svg)](https://galaxy.ansible.com/alvistack/gnome)
+[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-gnome_desktop.svg)](https://travis-ci.com/alvistack/ansible-role-gnome_desktop)
+[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-gnome_desktop.svg)](https://github.com/alvistack/ansible-role-gnome_desktop)
+[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-gnome_desktop.svg)](https://github.com/alvistack/ansible-role-gnome_desktop/blob/master/LICENSE)
+[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.gnome_desktop-blue.svg)](https://galaxy.ansible.com/alvistack/gnome_desktop)
 
-Ansible Role for Gnome Installation.
+Ansible Role for GNOME Desktop Installation.
 
 ## Requirements
 

@@ -16,7 +16,7 @@
 
 - name: include default variables
   include_vars: "../vars/main.yml"
-  tags: gnome
+  tags: gnome_desktop
 
 - name: include release specific variables
   include_vars: "{{ lookup('first_found', _params) }}"
@@ -31,7 +31,7 @@
       paths:
         - "../vars"
   ignore_errors: true
-  tags: gnome
+  tags: gnome_desktop
 
 - name: include release specific tasks
   include_tasks: "{{ lookup('first_found', _params) }}"
@@ -46,7 +46,7 @@
       paths:
         - "."
   ignore_errors: true
-  tags: gnome
+  tags: gnome_desktop
 
 - name: systemctl start gdm
   service:
@@ -55,7 +55,7 @@
     enabled: true
   changed_when: false
   ignore_errors: true
-  tags: gnome
+  tags: gnome_desktop
 
 - name: systemctl set-default graphical.target
   shell: |
@@ -65,8 +65,8 @@
     executable: "/bin/bash"
   changed_when: false
   ignore_errors: true
-  tags: gnome
+  tags: gnome_desktop
 
 - name: flush handlers
   meta: flush_handlers
-  tags: gnome
+  tags: gnome_desktop
