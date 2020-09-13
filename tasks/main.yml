@@ -50,7 +50,7 @@
 
 - name: systemctl start gdm.service
   service:
-    name: "{{ gdm_service }}"
+    name: "{{ _service }}"
     state: "started"
     enabled: true
   changed_when: false

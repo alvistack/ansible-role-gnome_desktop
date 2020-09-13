@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_gdm_service: "gdm.service"
+_service: "gdm.service"
 
 _apt:
   - { state: "latest", name: "task-gnome-desktop" }

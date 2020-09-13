@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_gdm_service: "display-manager.service"
+_service: "display-manager.service"
 
 _zypper:
   - { state: "latest", name: "patterns-gnome-gnome" }
