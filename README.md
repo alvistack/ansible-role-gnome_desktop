@@ -1,6 +1,6 @@
 # Ansible Role for GNOME Desktop
 
-[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-gnome_desktop.svg)](https://travis-ci.com/alvistack/ansible-role-gnome_desktop)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-gnome_desktop/master)](https://gitlab.com/alvistack/ansible-role-gnome_desktop/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-gnome_desktop.svg)](https://github.com/alvistack/ansible-role-gnome_desktop/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-gnome_desktop.svg)](https://github.com/alvistack/ansible-role-gnome_desktop/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.gnome_desktop-blue.svg)](https://galaxy.ansible.com/alvistack/gnome_desktop)
