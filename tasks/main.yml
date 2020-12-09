@@ -55,7 +55,7 @@
 
 - name: systemctl set-default graphical.target
   shell: |
-    set -o pipefail
+    set -euo pipefail
     systemctl set-default graphical.target
   args:
     executable: "/bin/bash"
