@@ -29,7 +29,7 @@
         - "{{ ansible_os_family | lower }}.yml"
       paths:
         - "../vars"
-  ignore_errors: true
+  failed_when: false
 
 - name: include release specific tasks
   include_tasks: "{{ lookup('first_found', _params) }}"
@@ -43,7 +43,7 @@
         - "{{ ansible_os_family | lower }}.yml"
       paths:
         - "."
-  ignore_errors: true
+  failed_when: false
 
 - name: systemctl start gdm.service
   service:
@@ -51,7 +51,7 @@
     state: "started"
     enabled: true
   changed_when: false
-  ignore_errors: true
+  failed_when: false
 
 - name: systemctl set-default graphical.target
   shell: |
@@ -60,7 +60,7 @@
   args:
     executable: "/bin/bash"
   changed_when: false
-  ignore_errors: true
+  failed_when: false
 
 - name: flush handlers
   meta: flush_handlers
