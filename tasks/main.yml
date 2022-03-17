@@ -15,10 +15,10 @@
 # limitations under the License.
 
 - name: include default variables
-  include_vars: "../vars/main.yml"
+  ansible.builtin.include_vars: "../vars/main.yml"
 
 - name: include release specific variables
-  include_vars: "{{ _loop_var }}"
+  ansible.builtin.include_vars: "{{ _loop_var }}"
   loop: "{{ query('first_found', _params) }}"
   loop_control:
     loop_var: _loop_var
@@ -54,7 +54,7 @@
       skip: true
 
 - name: systemctl start gdm.service
-  service:
+  ansible.builtin.service:
     name: "{{ _service }}"
     state: "started"
     enabled: true
@@ -62,7 +62,7 @@
   failed_when: false
 
 - name: systemctl set-default graphical.target
-  shell: |
+  ansible.builtin.shell: |
     set -euxo pipefail
     systemctl set-default graphical.target
   args:
@@ -71,4 +71,4 @@
   failed_when: false
 
 - name: flush handlers
-  meta: flush_handlers
+  ansible.builtin.meta: flush_handlers
