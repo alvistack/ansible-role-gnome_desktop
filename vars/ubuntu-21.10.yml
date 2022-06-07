@@ -17,6 +17,7 @@
 _service: "gdm.service"
 
 _apt:
+  - { state: "present", deb: "https://download.opensuse.org/repositories/home:/alvistack/xUbuntu_21.10/all/vanilla-gnome-default-settings_20.04.1_all.deb" }
   - { state: "latest", name: "vanilla-gnome-desktop" }
   - { state: "latest", name: "chrome-gnome-shell" }
   - { state: "latest", name: "gnome-system-tools" }
