@@ -20,6 +20,7 @@
   community.general.zypper:
     name: "{{ item.name }}"
     state: "{{ item.state }}"
+    force_resolution: true
     disable_recommends: true
   loop: "{{ _zypper }}"
   register: result
