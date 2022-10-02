@@ -62,9 +62,10 @@
   failed_when: false
 
 - name: systemctl set-default graphical.target
-  ansible.builtin.shell: |
-    set -euxo pipefail
-    systemctl set-default graphical.target
+  ansible.builtin.shell:
+    cmd: |
+      set -euxo pipefail
+      systemctl set-default graphical.target
   args:
     executable: "/bin/bash"
   changed_when: false
