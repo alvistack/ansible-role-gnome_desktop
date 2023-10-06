@@ -16,12 +16,9 @@
 
 _service: "gdm.service"
 
-_apt:
-  - { state: "latest", name: "task-gnome-desktop" }
+_yum:
+  - { state: "latest", name: "@gnome-desktop" }
   - { state: "latest", name: "chrome-gnome-shell" }
-  - { state: "latest", name: "file-roller" }
-  - { state: "latest", name: "gnome-shell-extension-prefs" }
-  - { state: "latest", name: "gnome-system-tools" }
   - { state: "latest", name: "gnome-tweaks" }
-  - { state: "latest", name: "xserver-xorg" }
-  - { state: "latest", name: "xwayland" }
+  - { state: "latest", name: "xorg-x11-server-Xorg" }
+  - { state: "latest", name: "xorg-x11-server-Xwayland" }
