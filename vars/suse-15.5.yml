@@ -14,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_service: "display-manager.service"
+_service: display-manager.service
 
 _zypper:
-  - { state: "latest", name: "patterns-gnome-gnome" }
-  - { state: "latest", name: "chrome-gnome-shell" }
-  - { state: "latest", name: "gnome-tweak-tool" }
-  - { state: "latest", name: "xorg-x11-server" }
-  - { state: "latest", name: "xorg-x11-server-wayland" }
+  - { state: latest, name: patterns-gnome-gnome }
+  - { state: latest, name: chrome-gnome-shell }
+  - { state: latest, name: gnome-tweak-tool }
+  - { state: latest, name: xorg-x11-server }
+  - { state: latest, name: xorg-x11-server-wayland }

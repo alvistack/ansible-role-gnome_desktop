@@ -14,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_service: "gdm.service"
+_service: gdm.service
 
 _yum:
-  - { state: "latest", name: "@gnome-desktop" }
-  - { state: "latest", name: "chrome-gnome-shell" }
-  - { state: "latest", name: "gnome-tweaks" }
-  - { state: "latest", name: "xorg-x11-server-Xorg" }
-  - { state: "latest", name: "xorg-x11-server-Xwayland" }
+  - { state: latest, name: "@gnome-desktop" }
+  - { state: latest, name: chrome-gnome-shell }
+  - { state: latest, name: gnome-tweaks }
+  - { state: latest, name: xorg-x11-server-Xorg }
+  - { state: latest, name: xorg-x11-server-Xwayland }
