@@ -17,8 +17,7 @@
 _service: gdm.service
 
 _apt:
-  - { state: latest, name: vanilla-gnome-desktop }
-  - { state: latest, name: ubuntu-desktop }
+  - { state: latest, name: task-gnome-desktop }
   - { state: latest, name: chrome-gnome-shell }
   - { state: latest, name: file-roller }
   - { state: latest, name: gnome-shell-extension-prefs }
