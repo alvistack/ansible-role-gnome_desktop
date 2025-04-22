@@ -16,9 +16,13 @@
 
 _service: gdm.service
 
-_yum:
-  - { state: latest, name: "@gnome-desktop" }
-  - { state: latest, name: gnome-browser-connector }
+_apt:
+  - { state: latest, name: vanilla-gnome-desktop }
+  - { state: latest, name: ubuntu-desktop }
+  - { state: latest, name: chrome-gnome-shell }
+  - { state: latest, name: file-roller }
+  - { state: latest, name: gnome-shell-extension-prefs }
+  - { state: latest, name: gnome-system-tools }
   - { state: latest, name: gnome-tweaks }
-  - { state: latest, name: xorg-x11-server-Xorg }
-  - { state: latest, name: xorg-x11-server-Xwayland }
+  - { state: latest, name: xserver-xorg }
+  - { state: latest, name: xwayland }
