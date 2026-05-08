@@ -23,3 +23,5 @@
   until: result is succeeded
   notify:
     - gnome_desktop | systemctl restart gdm.service
+  tags:
+    - _yum
