@@ -16,7 +16,7 @@
 
 _service: gdm.service
 
-_yum:
+_dnf:
   - { state: latest, name: "@gnome-desktop" }
   - { state: latest, name: chrome-gnome-shell }
   - { state: latest, name: gnome-tweaks }

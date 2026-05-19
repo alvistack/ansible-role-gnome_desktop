@@ -13,13 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: yum install
+- name: dnf install
   ansible.builtin.dnf:
     name: "{{ item.name }}"
     state: "{{ item.state }}"
     install_weak_deps: false
-  loop: "{{ _yum }}"
+  loop: "{{ _dnf }}"
   register: result
   until: result is succeeded
   notify:
     - gnome_desktop | systemctl restart gdm.service
+  tags:
+    - _dnf
